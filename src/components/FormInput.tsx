@@ -1,9 +1,11 @@
+ 
 interface formProbs {
     label: string,
     name: string,
     type: string,
+    children?:  React.ReactNode
 }
-const FormInput = ({ label, name, type }: formProbs) => {
+const FormInput = ({ label, name, type, children }: formProbs) => {
     return (
         <>
             {type !== 'checkbox' && (<div>
@@ -15,6 +17,7 @@ const FormInput = ({ label, name, type }: formProbs) => {
             {type === 'checkbox' && (<div className="form-group">
                 <label className="custom-check d-flex">
                     <input type="checkbox" />{label}
+                    {children}
                     <span className="checkmark"></span>
                 </label>
             </div>)}
