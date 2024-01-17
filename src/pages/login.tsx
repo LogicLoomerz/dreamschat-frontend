@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import Button from '../components/Button'
 import FormInput from '../components/FormInput'
 
@@ -9,9 +10,9 @@ const Login = () => {
                     <div className="login-left">
                         <div className="account-content">
                             <div className="login-header">
-                                <a href="index.html">
+                                <Link to="/">
                                     <img src="images/logo-full.png" alt="" />
-                                </a>
+                                </Link>
                             </div>
                             <div className="form-col">
                                 <div className="login-text-details">
@@ -22,18 +23,17 @@ const Login = () => {
                                     <FormInput label={'Your Email'} name={'email'} type={'email'} />
                                     <FormInput label={'Password'} name={'password'} type={'password'} />
                                     <FormInput label={'Keep me logged in'} name={'check'} type={'checkbox'} />
-                                   
                                     <Button type='submit' text='Login' />
-                                    <div className="text-center dont-have">Don’t have an account? <a href="signup-email.html">Signup</a></div>
+                                    <div className="text-center dont-have">Don’t have an account? <Link to="/sign-up">Signup</Link></div>
                                     <div className="text-center mt-3">
                                         <span className="forgot-link">
-                                            <a href="forgotpassword-email.html" className="text-end">Forgot Password ?</a>
+                                            <Link to="/" className="text-end">Forgot Password ?</Link>
                                         </span>
                                     </div>
                                 </form>
                             </div>
                             <div className="back-btn-col text-center">
-                                <a href="/"><span><i className="fas fa-caret-left"></i></span> Back</a>
+                                <Link to="/"><span><i className="fas fa-caret-left"></i></span> Back</Link>
                             </div>
                         </div>
                     </div>
