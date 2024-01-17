@@ -23,9 +23,8 @@ const Login = () => {
                                     <FormInput label={'Your Email'} name={'email'} type={'email'} />
                                     <FormInput label={'Password'} name={'password'} type={'password'} />
                                     <FormInput label={'Keep me logged in'} name={'check'} type={'checkbox'} />
-                                   
                                     <Button type='submit' text='Login' />
-                                    <div className="text-center dont-have">Don’t have an account? <Link to="/">Signup</Link></div>
+                                    <div className="text-center dont-have">Don’t have an account? <Link to="/sign-up">Signup</Link></div>
                                     <div className="text-center mt-3">
                                         <span className="forgot-link">
                                             <Link to="/" className="text-end">Forgot Password ?</Link>

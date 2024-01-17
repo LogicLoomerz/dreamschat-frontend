@@ -4,9 +4,7 @@ import { Link } from 'react-router-dom'
 
 const Signup = () => {
     return (
-        <div className="account-page">
-
-            {/* <!-- Main Wrapper --> */}
+        <div className="account-page"> 
             <div className="main-wrapper"> 
                 <div className="content align-items-center">
 
@@ -34,7 +32,7 @@ const Signup = () => {
                                             <Link to="#"  > Terms &amp; Conditions,</Link> <Link to="#">Privacy Policy.</Link>
                                         </FormInput>
                                         <Button text='Create Account' type='submit' />
-                                        <div className="text-center dont-have">Already have an Account?  <Link to="/">Login</Link></div>
+                                        <div className="text-center dont-have">Already have an Account?  <Link to="/login">Login</Link></div>
                                     </form>
                                 </div>
                                 <div className="back-btn-col text-center">
