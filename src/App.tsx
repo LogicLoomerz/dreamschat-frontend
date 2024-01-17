@@ -1,4 +1,3 @@
- import './assets/global.css'
 
 function App() {
  
